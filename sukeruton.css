@@ -1,24 +1,210 @@
-@import url('webfonts/yanone.css');
-@import url('webfonts/lolita.css');
-@import url('wc-texts.css');
-@import url('wc-boxes.css');
-@import url('wc-colors.css');
-@import url('wc-postlayouts.css');
-@import url('wc-postimages.css');
-* {
-	box-sizing : border-box;
-	margin: 0;
+/*Framework project by Juan Pablo Medina - Wecan Studio for Wecan site and future projects*/
+@import url('reset.css');
+
+html, body {
+	font-size: 10px;
+}
+h2 {
+	font-size: 5em;
+	font-weight: 400;
+	text-align: center;
 	padding: 0;
-	-webkit-transition: 0.5s all ease;
-	-o-transition: 0.5s all ease;
-	transition: 0.5s all ease;
+	margin: 0;
+}
+.main {
+	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+	max-width: 100%;
+}
+.row {
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+[class*="row-"]{
+	margin: 0 auto;
+}
+.row-90{width:90%;}
+.row-80{width:80%;}
+.row-70{width:70%;}
+.row-60{width:60%;}
+.row-50{width:50%;}
+.row-40{width:40%;}
+.row-30{width:30%;}
+.row-20{width:20%;}
+.row-10{width:10%;}
+.height-5 {
+	height: 5em;
+}
+.height-10 {
+	height: 10em;
+}
+.height-15 {
+	height: 15em;
+}
+.height-20 {
+	height: 20em;
+}
+.height-25 {
+	height: 25em;
+}
+.height-30 {
+	height: 30em;
+}
+.height-35 {
+	height: 35em;
+}
+.height-40 {
+	height: 40em;
+}
+.height-45 {
+	height: 45em;
+}
+.height-50 {
+	height: 50em;
+}
+.height-55 {
+	height: 55em;
+}
+.height-60 {
+	height: 60em;
+}
+.height-65 {
+	height: 65em;
+}
+.height-70 {
+	height: 70em;
+}
+.height-75 {
+	height: 75em;
+}
+.height-80 {
+	height: 80em;
 }
 
-body {
-/*	background: #F5F5F5;*/	
-	background: gray;
-	font-family: Arial;
-	font-size: 10px;
-	margin-top: 7px;
+[class*="big-"]{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+/*	background-color: rgba(204,28,0,0.69);
+*/	display: inline-block;
+	float: left;
+	height: 100%;
+	margin-right: 0.834%;
+	overflow: hidden;
+}
+[class*="big-"]:nth-last-child(1){
+	margin-right: 0;
+}
+.big-12 {
 	width: 100%;
+}
+.big-11 {
+	width: 91.597%;
+}
+.big-10 {
+	width: 83.194%;
+}
+.big-9 {
+	width: 74.791%;
+}
+.big-8 {
+	width: 66.388%;
+}
+.big-7 {
+	width: 57.985%;
+}
+.big-6 {
+	width: 49.582%;
+}
+.big-5 {
+	width: 41.179%;
+}
+.big-4 {
+	width: 32.776%;
+}
+.big-3 {
+	width: 24.373%;
+}
+.big-2 {
+	width: 15.97%;
+}
+.big-1 {
+	width: 7.567%;
+}
+@media all and (max-width: 899px){
+	.row {
+		font-size: 0.85rem;
+	}
+	[class*="big-"]{
+		display: none;
+	}
+	[class*="med-"]{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+/*		background-color: rgba(0, 82, 204, 0.69);
+*/		display: inline-block;
+		float: left;
+		height: 100%;
+		margin-right: 0.834%;
+		overflow: hidden;
+	}
+	[class*="med-"]:nth-last-child(1){
+		margin-right: 0;
+	}
+	.med-6 {
+		width: 100%;
+	}
+	.med-5 {
+		width: 83.194%;
+	}
+	.med-4 {
+		width: 66.388%;
+	}
+	.med-3 {
+		width: 49.582%;
+	}
+	.med-2 {
+		width: 32.776%;
+	}
+	.med-1 {
+		width: 15.97%;
+	}
+}
+@media all and (max-width: 539px){
+	.row {
+		font-size: 0.65rem;
+	}
+	[class*="big-"], [class*="med"]{
+		display: none;
+	}
+	[class*="sml-"]{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+/*		background-color: rgba(144, 204, 0, 0.69);
+*/		display: inline-block;
+		float: left;
+		height: 100%;
+		margin-right: 0.834%;
+		overflow: hidden;
+	}
+	[class*="sml-"]:nth-last-child(1){
+		margin-right: 0;
+	}
+	.sml-4 {
+		width: 100%;
+	}
+	.sml-3 {
+		width: 74.791%;
+	}
+	.sml-2 {
+		width: 49.582%;
+	}
+	.sml-1 {
+		width: 24.373%;
+	}
 }
